@@ -1,0 +1,14 @@
+{
+  "name": "arcade_server",
+  "description": "parse-server for arcade_server",
+  "scripts": {
+    "start": "nodemon main.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "nodemon": "^2.0.16",
+    "parse-dashboard": "^4.1.1",
+    "parse-server": "^3.9.0"
+  }
+}
