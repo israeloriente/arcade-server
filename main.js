@@ -25,10 +25,16 @@ var dashboard = new ParseDashboard({
       appName: "arcade_server",
     },
   ],
+  users: [
+    {
+      user: process.env.USERNAME,
+      pass: process.env.PASSWORD,
+    }
+  ]
 });
 
 parse.use("/parse", api);
 parse.use("/dashboard", dashboard);
-parse.listen(process.env.PORT, function() {
-  console.log("parse-server running on port " + port + ".");
+parse.listen(process.env.PORT, function () {
+  console.log("Running on port " + port + ".");
 });
