@@ -29,8 +29,8 @@ var dashboard = new ParseDashboard({
     {
       user: process.env.USERNAME,
       pass: process.env.PASSWORD,
-    }
-  ]
+    },
+  ],
 });
 
 parse.use("/parse", api);
